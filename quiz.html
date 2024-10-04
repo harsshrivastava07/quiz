@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="quiz-title">Student Quiz</h1>
+        <div id="timer" class="timer">Time Left: <span id="time">60</span> seconds</div>
+
+        <div id="quiz" class="quiz-content">
+            <!-- Quiz questions will be dynamically generated here -->
+            <p id="question" class="question-text">Loading question...</p>
+
+            <div class="options">
+                <button id="option1" class="option-btn"></button>
+                <button id="option2" class="option-btn"></button>
+                <button id="option3" class="option-btn"></button>
+                <button id="option4" class="option-btn"></button>
+            </div>
+
+            <div id="next-container">
+                <button id="nextButton" class="next-btn">Next Question</button>
+            </div>
+        </div>
+
+        <div id="result" class="hidden">
+            <h2 class="result-message">Congratulations!</h2>
+            <p>Your score is <span id="score"></span>/5</p>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

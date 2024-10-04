@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Quiz Application</h1>
+        <div class="login-buttons">
+            <button id="adminLogin">Admin Login</button>
+            <button id="studentLogin">Student Login</button>
+        </div>
+
+        <!-- Admin Login Form -->
+        <div id="adminForm" class="form-container hidden">
+            <h2>Admin Login</h2>
+            <input type="text" id="adminId" placeholder="Admin ID" required>
+            <input type="password" id="adminPassword" placeholder="Password" required>
+            <button id="adminSubmit">Login</button>
+            <p id="adminError" class="error hidden">Invalid ID or Password!</p>
+        </div>
+
+        <!-- Student Login Form -->
+        <div id="studentForm" class="form-container hidden">
+            <h2>Student Login</h2>
+            <input type="tel" id="studentPhone" placeholder="Mobile Number" required>
+            <button id="sendOtp">Send OTP</button>
+            <input type="text" id="otpInput" class="hidden" placeholder="Enter OTP">
+            <button id="studentSubmit" class="hidden">Verify OTP</button>
+            <p id="otpError" class="error hidden">Invalid OTP!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

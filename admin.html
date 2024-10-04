@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1 class="admin-title">Admin Panel</h1>
+
+        <!-- Admin Login Form -->
+        <div id="adminLogin" class="form-container">
+            <h2>Admin Login</h2>
+            <input type="text" id="adminId" placeholder="Admin ID" required>
+            <input type="password" id="adminPassword" placeholder="Password" required>
+            <button id="adminSubmit">Login</button>
+            <p id="adminError" class="error hidden">Invalid ID or Password!</p>
+        </div>
+
+        <!-- Admin Question Form -->
+        <div id="questionForm" class="form-container hidden">
+            <h2>Add a New Question</h2>
+            <form id="adminQuestionForm">
+                <input type="text" id="questionText" placeholder="Question" required>
+                <input type="text" id="optionA" placeholder="Option A" required>
+                <input type="text" id="optionB" placeholder="Option B" required>
+                <input type="text" id="optionC" placeholder="Option C" required>
+                <input type="text" id="optionD" placeholder="Option D" required>
+                <input type="text" id="correctOption" placeholder="Correct Option (a/b/c/d)" required>
+                <button type="submit">Add Question</button>
+            </form>
+            <p id="adminMessage" class="success hidden">Question added successfully!</p>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
